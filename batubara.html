@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Sumatera Utara-Batu Bara</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .header {
+            background-image: url(head.GIF);
+            color: #fff;
+            padding: 200px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            color: #333; 
+            background-color: #b1b1b1;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 15px 0;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .navbar a:hover {
+            background: #555;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .section-title {
+            flex-wrap: wrap;
+            padding: 0px;
+            justify-content: left;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        section h2 {
+            color: black;
+        }
+        section p {
+            color: #000000;
+        }
+        .place {
+            display: flex;
+            align-items: center;
+        }
+        .place img {
+            width: 300px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .place dl {
+            display: table;
+            width: 100%;
+        }
+        .place dt, .place dd {
+            padding: 5px;
+        }
+        .place dt {
+            font-weight: bold;
+            width: 30%;
+        }
+        .place dd {
+            width: 100%;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+        #top {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        #top:hover {
+            background-color: #4CAF50; 
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><img src="WISATA.png" height="100"></h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="destination.html">List</a>
+        <a href="map.html">Peta</a>
+    </div>
+    <h2 class="section-title"><font size="6">Wisata Kabupaten Batu Bara</font></h2>
+    <section id="pandang" class="place">
+        <img src="pandang.jpg" alt="pandang" height="300">
+        <div>
+            <h2>Pulau Pandang</h2>
+            <p>Pulau Pandang adalah pulau kecil yang menawarkan keindahan alam bawah laut dan pantai berpasir putih. Pulau ini menjadi tempat favorit bagi para penyelam dan pecinta snorkeling.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 20.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 17.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Kecamatan Tanjung Tiram, Kabupaten Batu Bara, Sumatera Utara</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, warung makan, penyewaan peralatan snorkeling, toilet.</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="bunga" class="place">
+        <img src="Bunga.jpg" alt="bunga" height="300">
+        <div>
+            <h2>Pantai Bunga</h2>
+            <p>Pantai Bunga dikenal dengan pasir putihnya yang lembut dan pemandangan matahari terbenam yang memukau. Pantai ini menjadi tempat yang ideal untuk berlibur bersama keluarga.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 5.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 18.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Lalang, Kecamatan Medang Deras, Kabupaten Batu Bara, Sumatera Utara</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, warung makan, toilet, gazebo untuk bersantai.</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="perjuangan" class="place">
+        <img src="pantai-jono.jpg" alt="perjuangan" height="300">
+        <div>
+            <h2>Pantai Jono/Perjuangan</h2>
+            <p>Pantai Jono adalah destinasi wisata pantai yang menawarkan keindahan alam dan suasana yang tenang, cocok untuk melepas penat dari rutinitas sehari-hari.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 5.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 18.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Jono, Kecamatan Limapuluh, Kabupaten Batu Bara, Sumatera Utara</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, warung makan, toilet, area bermain anak.</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="datuk" class="place">
+        <img src="Pantai-datuk.jpg" alt="datuk" height="300">
+        <div>
+            <h2>Wisata Alam Datuk</h2>
+            <p>Pantai Datuk memiliki daya tarik berupa pantai yang bersih dan air laut yang jernih. Pantai ini juga menawarkan berbagai kegiatan air yang menarik.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 10.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 18.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Kuala Indah, Kecamatan Sei Suka, Kabupaten Batu Bara, Sumatera Utara</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, warung makan, toilet, gazebo untuk bersantai, penyewaan perahu.</dd>
+            </dl>
+        </div>
+    </section>
+    <div class="footer">
+        <p>Hak Cipta &copy; 2024 Wisata Sumatera Utara</p>
+    </div>
+    <button id="top" onclick="scrollToTop()"> KEMBALI KE ATAS</button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

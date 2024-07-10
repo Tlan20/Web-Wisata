@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Medan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd700; /*warna kuning*/
+        }
+        section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        section h2 {
+            color: #333;
+        }
+        section p {
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2px;
+            bottom: 0;
+            width: 100%;
+        }
+        .place {
+            display: flex;
+            align-items: center;
+        }
+        .place img {
+            width: 300px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #homeBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        #homeBtn:hover {
+            background-color: #ffd700; /* warna kuning */
+            transform: translateY(-2px);
+        }
+        #mapBtn {
+            position: fixed;
+            bottom: 60px;
+            right: 20px;
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 21.5px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        #mapBtn:hover {
+            background-color: #ffd700; /* warna kuning */
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wisata Di Daerah Medan</h1>
+    </header>
+    <nav>
+        <a href="#home"></a>
+        <a href="#map"></a>
+        <a href="#istanamaimun">Istana Maimun</a>
+        <a href="#masjidmedan">Masjid Raya Al-Mashun</a>
+        <a href="#bukitlawang">Bukit Lawang</a>
+        <a href="#sijorni">Air Terjun Sijorni</a>
+        <a href="#holbung">Bukit Holbung</a>
+    </nav>
+    <section id="istanamaimun" class="place">
+        <img src="istana maimun.jpg" alt="Istana Maimun" height="300">
+        <div>
+            <h2>Istana Maimun</h2>
+            <p> Sebuah istana megah yang merupakan peninggalan Kesultanan Deli dan kini menjadi salah satu ikon kota Medan. Istana ini memiliki arsitektur yang indah dan sering dikunjungi wisatawan.</p>
+            <p>Biaya Masuk: Rp. 10.000/orang</p>
+            <p>Waktu Buka: Setiap hari, pukul 08:00 - 17:00</p>
+            <p>Alamat: Jl. Brigadir Jenderal Katamso, Medan.</p>
+            <p>Fasilitas: Ruang pameran, foto-foto bersejarah, perabotan antik.</p>
+        </div>
+    </section>
+    <section id="masjidmedan" class="place">
+        <img src="masjid medan.jpg" alt="masjidmedan" height="300">
+        <div>
+            <h2>Masjid Raya Al-Mashun</h2>
+            <p> Juga dikenal sebagai Masjid Raya Medan, masjid ini merupakan salah satu masjid terbesar dan tertua di Medan. Didirikan pada awal abad ke-20, masjid ini terkenal dengan arsitektur yang megah dan ornamen yang indah.</p>
+            <p>Biaya Masuk: Gratis</p>
+            <p>Waktu Buka: Setiap hari, 24 jam.</p>
+            <p>Alamat: Jl. Sisingamangaraja, Medan.</p>
+            <p>Fasilitas: Area shalat yang luas, halaman yang luas.</p>
+        </div>
+    </section>
+    <footer>
+        <p>Hak Cipta &copy; 2024 Wisata Sumatera Utara</p>
+    </footer>
+    <button id="mapBtn" onclick="location.replace('sumut.html')">KEMBALI KE MAP</button>
+    <button id="homeBtn" onclick="scrollToTop()">KEMBALI KE ATAS</button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+    </script>
+</body>
+</html>

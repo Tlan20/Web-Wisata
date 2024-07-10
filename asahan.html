@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Sumatera Utara-Asahan</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .header {
+            background-image: url(head.GIF);
+            color: #fff;
+            padding: 200px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            color: #333; 
+            background-color: #b1b1b1;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 15px 0;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .navbar a:hover {
+            background: #555;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .section-title {
+            flex-wrap: wrap;
+            padding: 0px;
+            justify-content: left;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        section h2 {
+            color: black;
+        }
+        section p {
+            color: #000000;
+        }
+        .place {
+            display: flex;
+            align-items: center;
+        }
+        .place img {
+            width: 300px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .place dl {
+            display: table;
+            width: 100%;
+        }
+        .place dt, .place dd {
+            padding: 5px;
+        }
+        .place dt {
+            font-weight: bold;
+            width: 30%;
+        }
+        .place dd {
+            width: 100%;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+        #top {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        #top:hover {
+            background-color: #4CAF50; 
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><img src="WISATA.png" height="100"></h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="destination.html">List</a>
+        <a href="map.html">Peta</a>
+    </div>
+    <h2 class="section-title"><font size="6">Wisata Kabupaten Asahan</font></h2>
+    <section id="ponot" class="place">
+        <img src="Ponot.jpg" alt="ponot" height="300">
+        <div>
+            <h2>Air Terjun Ponot</h2>
+            <p>Air Terjun Ponot adalah salah satu air terjun tertinggi di Indonesia dengan ketinggian sekitar 250 meter. Aliran air terjun ini langsung berasal dari Danau Toba. Terletak di Desa Tangga, Kecamatan Aek Songsongan.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 5.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 18.00.</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Tangga, Kecamatan Aek Songsongan, Kabupaten Asahan, Sumatera Utara</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, warung makan, tempat istirahat, toilet</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="pandan" class="place">
+        <img src="pandan.jpg" alt="pandan" height="300">
+        <div>
+            <h2>Pantai Pandan</h2>
+            <p>Pantai dengan pemandangan indah yang berada di Desa Bandar Pulau.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 10.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 18.00.</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Bandar Pulau, Kecamatan Bandar Pulau, Kabupaten Asahan, Sumatera Utara.</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, warung makan, tempat istirahat, gazebo, toilet.</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="teratai" class="place">
+        <img src="teratai.jpg" alt="teratai" height="300">
+        <div>
+            <h2>Danau Teratai</h2>
+            <p>Danau alami dengan pemandangan indah dan suasana yang tenang, cocok untuk rekreasi keluarga.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 5.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 17.00.</dd>
+                <dt>Alamat:</dt>
+                <dd>Kecamatan Pulo Bandring, Kabupaten Asahan, Sumatera Utara.</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, warung makan, tempat istirahat, toilet, perahu sewa.</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="sijorni" class="place">
+        <img src="sijorni.jpg" alt="sijorni" height="300">
+        <div>
+            <h2>Aek Sijorni</h2>
+            <p>Pemandian alam dengan air yang jernih dan segar, berasal dari mata air pegunungan.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 10.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 17.00.</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Sijorni, Kecamatan Simpang Empat, Kabupaten Asahan, Sumatera Utara.</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, warung makan, tempat istirahat, toilet, kolam renang alami.</dd>
+            </dl>
+        </div>
+    </section>
+    <div class="footer">
+        <p>Hak Cipta &copy; 2024 Wisata Sumatera Utara</p>
+    </div>
+    <button id="top" onclick="scrollToTop()"> KEMBALI KE ATAS</button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

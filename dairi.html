@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Sumatera Utara-Dairi</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .header {
+            background-image: url(head.GIF);
+            color: #fff;
+            padding: 200px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            color: #333; 
+            background-color: #b1b1b1;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 15px 0;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .navbar a:hover {
+            background: #555;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .section-title {
+            flex-wrap: wrap;
+            padding: 0px;
+            justify-content: left;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        section h2 {
+            color: black;
+        }
+        section p {
+            color: #000000;
+        }
+        .place {
+            display: flex;
+            align-items: center;
+        }
+        .place img {
+            width: 300px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .place dl {
+            display: table;
+            width: 100%;
+        }
+        .place dt, .place dd {
+            padding: 5px;
+        }
+        .place dt {
+            font-weight: bold;
+            width: 30%;
+        }
+        .place dd {
+            width: 100%;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><img src="WISATA.png" height="100"></h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="destination.html">List</a>
+        <a href="map.html">Peta</a>
+    </div>
+    <h2 class="section-title"><font size="6">Wisata Kabupaten Dairi</font></h2>
+    <section id="lae" class="place">
+        <img src="lae.webp" alt="lae" height="300">
+        <div>
+            <h2>Air Terjun Lae Pendaroh</h2>
+            <p>Sebuah air terjun unik di mana kalau hujan kabarnya air yang jernih berubah menjadi berwarna kemerahan.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Gratis</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 24 jam</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Lae Pendaroh, Kecamatan Sitinjo</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Tempat parkir, warung makan</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="cike" class="place">
+        <img src="cike.png" alt="cike" height="300">
+        <div>
+            <h2>Danau Sicike-cike</h2>
+            <p>Danau ini terletak di kawasan konservasi dan dikelilingi oleh hutan yang masih asri. Cocok untuk kegiatan trekking dan bird watching.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 10.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 17.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Parbuluan VI, Kecamatan Parbuluan</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, pos jaga, toilet, tempat istirahat</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="Siadtaratas" class="place">
+        <img src="Siadtaratas.jpg" alt="Siadtaratas" height="300">
+        <div>
+            <h2>Bukit Siadtaratas</h2>
+            <p>Bukit ini menawarkan pemandangan alam yang indah dari ketinggian. Tempat yang sempurna untuk menikmati sunrise atau sunset.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Gratis</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 24 jam</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Tigalingga, Kecamatan Tigalingga</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, warung makanan, tempat duduk</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="iman" class="place">
+        <img src="iman.jpg" alt="iman" height="300">
+        <div>
+            <h2>Taman Wisata Iman</h2>
+            <p>Taman ini merupakan tempat wisata religi yang menyajikan replika rumah ibadah dari berbagai agama yang ada di Indonesia.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 5.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 18.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Sitinjo, Kecamatan Sitinjo</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Tempat parkir, toilet, warung makanan, tempat istirahat</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="pariban" class="place">
+        <img src="pariban.jpg" alt="pariban" height="300">
+        <div>
+            <h2>Pemandian Air Panas Pariban</h2>
+            <p>Pemandian air panas alami yang sangat populer di kalangan wisatawan lokal untuk relaksasi dan terapi kesehatan.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 10.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 07.00 - 20.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Parbuluan IV, Kecamatan Parbuluan</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Kolam air panas, area parkir, toilet, tempat ganti baju, warung makanan</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="pantai silalahi" class="place">
+        <img src="pantai silalahi.jpeg" alt="pantai silalahi" height="300">
+        <div>
+            <h2>Pantai Silalahi</h2>
+            <p>Pantai ini terletak di tepi Danau Toba, menawarkan pemandangan danau yang indah serta aktivitas air seperti berenang dan berperahu.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 10.000 per orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 18.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Silalahi, Kecamatan Silahisabungan</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, warung makanan, toilet, tempat duduk</dd>
+            </dl>
+        </div>
+    </section>
+    <div class="footer">
+        <p>Hak Cipta &copy; 2024 Wisata Sumatera Utara</p>
+    </div>
+</body>
+</html>

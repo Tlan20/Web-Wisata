@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Sumatera Utara-Langkat</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .header {
+            background-image: url(head.GIF);
+            color: #fff;
+            padding: 200px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            color: #333; 
+            background-color: #b1b1b1;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 15px 0;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .navbar a:hover {
+            background: #555;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .section-title {
+            flex-wrap: wrap;
+            padding: 0px;
+            justify-content: left;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        section h2 {
+            color: black;
+        }
+        section p {
+            color: #000000;
+        }
+        .place {
+            display: flex;
+            align-items: center;
+        }
+        .place img {
+            width: 300px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .place dl {
+            display: table;
+            width: 100%;
+        }
+        .place dt, .place dd {
+            padding: 5px;
+        }
+        .place dt {
+            font-weight: bold;
+            width: 30%;
+        }
+        .place dd {
+            width: 100%;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><img src="WISATA.png" height="100"></h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="destination.html">List</a>
+        <a href="map.html">Peta</a>
+    </div>
+    <h2 class="section-title"><font size="6">Wisata Kabupaten Langkat</font></h2>
+    <section id="lawang" class="place">
+        <img src="bukit lawang.jpeg" alt="lawang" height="300">
+        <div>
+            <h2>Bukit Lawang</h2>
+            <p>Bukit Lawang adalah pintu gerbang menuju Taman Nasional Gunung Leuser dan terkenal sebagai tempat konservasi orangutan Sumatera.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 5.000/orang (biaya tambahan untuk pemandu dan trekking)</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 24 jam</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Bukit Lawang, Kecamatan Bahorok, Kabupaten Langkat, Sumatera Utara.</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Penginapan, restoran, pemandu wisata, jalur trekking, area parkir.</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="tangkahan" class="place">
+        <img src="tangkahan.jpg" alt="tangkahan" height="300">
+        <div>
+            <h2>Tangkahan</h2>
+            <p>Tangkahan adalah destinasi wisata alam yang menawarkan pengalaman ekowisata, termasuk trekking, pemandian gajah, dan tubing di Sungai Batang Serangan.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 10.000/orang (biaya tambahan untuk aktivitas seperti menunggang gajah dan tubing).</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 24 jam</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Namo Sialang, Kecamatan Batang Serangan, Kabupaten Langkat, Sumatera Utara.</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Penginapan, restoran, pemandu wisata, area parkir, pusat informasi turis.</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="dwi" class="place">
+        <img src="dwi.jpg" alt="dwi" height="300">
+        <div>
+            <h2>Air Terjun Telaga Dwi Warna Sibolangit</h2>
+            <p>Air terjun dengan dua warna yang berbeda, yaitu biru dan putih, karena kandungan mineral yang berbeda di setiap aliran airnya.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 10.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 17.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Durin Sirugun, Kecamatan Sibolangit, Kabupaten Langkat, Sumatera Utara.</dd>
+                <dt>Fasilitas:</dt>
+                <dd> Area parkir, pemandu wisata, tempat istirahat.</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="selang" class="place">
+        <img src="selang.jpg" alt="selang" height="300">
+        <div>
+            <h2>Selang Pangeran</h2>
+            <p>Perpaduan asri antara alam dan aliran sungai yang tenang menjadi daya tarik dari tempat wisata ini. Terdapat juga beberapa spot yang bisa dukunjungi yaitu, air terjun dua tingkat dan pemandian alam.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 5.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 06.00 - 18.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Pangkalan Batu, Kecamatan Berandan Barat, Kabupaten Langkat, Sumatera Utara.</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, warung makan, tempat istirahat, toilet.</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="saringgana" class="place">
+        <img src="saringgana.png" alt="saringgana" height="300">
+        <div>
+            <h2>Air Terjun Saringgana</h2>
+            <p> Air terjun alami yang tersembunyi di tengah hutan, menawarkan pemandangan yang indah dan suasana yang tenang.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 5.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 17.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Saringgana, Kecamatan Wampu, Kabupaten Langkat, Sumatera Utara.</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, tempat istirahat, pemandu wisata.</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="sembilan" class="place">
+        <img src="sembilan.jpg" alt="sembilan" height="300">
+        <div>
+            <h2>Pulau Sembilan</h2>
+            <p>Sebuah pulau kecil dengan pantai yang indah dan air laut yang jernih, cocok untuk snorkeling dan diving.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 15.000/orang  (biaya tambahan untuk snorkeling dan diving).</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 06.00 - 18.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Kecamatan Gebang, Kabupaten Langkat, Sumatera Utara.</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, penginapan, warung makan, tempat istirahat, penyewaan alat snorkeling dan diving.</dd>
+            </dl>
+        </div>
+    </section>
+    <div class="footer">
+        <p>Hak Cipta &copy; 2024 Wisata Sumatera Utara</p>
+    </div>
+</body>
+</html>

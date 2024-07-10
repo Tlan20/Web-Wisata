@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Sumatera Utara</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .header {
+            background-image: url(head.GIF);
+            color: #fff;
+            padding: 200px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            color: #333; 
+            background-color: #b1b1b1;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 15px 0;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .navbar a:hover {
+            background: #555;
+            transform: scale(1.1);
+        }
+        .search-container {
+            max-width: 500px;
+            margin: auto;
+            text-align: right;
+        }
+        .search-container input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .search-container button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #45a049;
+        }
+        .section-title {
+            flex-wrap: wrap;
+            padding: 0px;
+            justify-content: left;
+        }
+        .recomendation {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .card {
+            background: #fff;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 200px;
+        }
+        .card a {
+            text-decoration: none;
+        }
+        .card h3 {
+            margin: 5px 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .card h4{
+            margin: 5px 0;
+            color: #333;
+            text-decoration: none;
+        }
+        .card h4:hover {
+            color: #45a049;
+        }
+        .card p {
+            color: #666;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+        .guide {
+            background: #fff;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+        .guide h3 {
+            margin: 5px 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .guide p {
+            color: #333;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><img src="WISATA.png" height="100"></h1>
+    </div>
+    <div class="navbar">
+        <a href="destination.html">List</a>
+        <a href="map.html">Peta</a>
+    </div>
+    <div class="search-container">
+        <input type="text" id="searchBar" placeholder="Search.." onkeyup="searchCards()">
+        <button onclick="searchCards()">Search</button>
+    </div>
+    <div class="content" id="cardContainer">
+        <h2 class="section-title"><font size="7">Destinasi Populer</font></h2>
+        <div class="recomendation">
+            <div class="card">
+                <img src="toba.jpg" alt="Lake Toba">
+                <h3>Danau Toba</h3>
+                <p>Danau vulkanik terbesar di dunia yang menawarkan pemandangan alam yang menakjubkan dan budaya Batak yang kaya.</p>
+            </div>
+            <div class="card">
+                <img src="tangkahan.jpg" alt="Tangkahan">
+                <h3>Tangkahan</h3>
+                <p>Destinasi wisata alam yang menawarkan pengalaman ekowisata</p>
+                <a href="langkat.html">
+                    <h4>Info selengkapnya>>></h4>
+                </a>
+            </div>
+            <div class="card">
+                <img src="bukit lawang.jpeg" alt="Bukit Lawang">
+                <h3>Bukit Lawang</h3>
+                <p>Terkenal sebagai tempat konservasi orangutan Sumatera.</p>
+                <a href="langkat.html">
+                    <h4>Info selengkapnya>>></h4>
+                </a>
+            </div>
+            <div class="card">
+                <img src="sijorni.jpg" alt="Medan">
+                <h3>Aek Sijorni</h3>
+                <p>Pemandian alam dengan air yang jernih dan segar.</p>
+                <a href="asahan.html">
+                    <h4>Info selengkapnya>>></h4>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="content" id="cardContainer">
+        <h2 class="section-title"><font size="7">Panduan Wisata</font></h2>
+        <div class="recomendation">
+            <div class="guide">
+                <h3>Informasi Umum</h3>
+                <p><strong>Iklim dan Cuaca:</strong> Sumatera Utara memiliki iklim tropis dengan musim hujan dan kemarau. Suhu rata-rata berkisar antara 22°C hingga 30°C. Musim terbaik untuk berkunjung adalah antara April dan Oktober.</p>
+                <p><strong>Bahasa dan Mata Uang:</strong> Bahasa yang digunakan adalah Bahasa Indonesia, dan mata uang yang digunakan adalah Rupiah (IDR).</p>
+            </div>
+    
+            <div class="guide">
+                <h3>Transportasi</h3>
+                <p><strong>Cara Mencapai Sumatera Utara:</strong> Bandara Internasional Kualanamu di Medan adalah gerbang utama menuju Sumatera Utara. Terdapat penerbangan langsung dari berbagai kota besar di Indonesia dan beberapa negara tetangga.</p>
+                <p><strong>Transportasi Lokal:</strong> Anda dapat menggunakan bus, kereta, atau taksi untuk berkeliling Sumatera Utara. Sewa kendaraan juga tersedia di kota-kota besar.</p>
+            </div>
+    
+            <div class="guide">
+                <h3>Etika dan Budaya</h3>
+                <p><strong>Kebiasaan Lokal:</strong> Masyarakat Sumatera Utara sangat ramah dan menghargai adat istiadat. Pastikan untuk selalu sopan dan menghormati tradisi lokal.</p>
+                <p><strong>Hal-hal yang Harus Dilakukan:</strong> Selalu berpakaian sopan, terutama saat mengunjungi tempat ibadah atau desa adat.</p>
+            </div>
+    
+            <div class="guide">
+                <h3>Keamanan dan Kesehatan</h3>
+                <p><strong>Informasi Kesehatan:</strong> Pastikan Anda sudah divaksinasi sesuai dengan rekomendasi kesehatan sebelum berkunjung. Bawa obat-obatan pribadi dan gunakan obat anti-nyamuk.</p>
+                <p><strong>Tips Keamanan:</strong> Selalu jaga barang berharga Anda, hindari daerah yang kurang aman pada malam hari, dan gunakan transportasi resmi.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Hak Cipta &copy; 2024 Wisata Sumatera Utara</p>
+    </div>
+
+    <script>
+        function searchCards() {
+            var input, filter, cards, cardContainer, h3, title, i;
+            input = document.getElementById("searchBar");
+            filter = input.value.toUpperCase();
+            cardContainer = document.getElementById("cardContainer");
+            cards = cardContainer.getElementsByClassName("card");
+            for (i = 0; i < cards.length; i++) {
+                h3 = cards[i].getElementsByTagName("h3")[0];
+                title = h3.textContent || h3.innerText;
+                if (title.toUpperCase().indexOf(filter) > -1) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

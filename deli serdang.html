@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Sumatera Utara-Deli Serdang</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .header {
+            background-image: url(head.GIF);
+            color: #fff;
+            padding: 200px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            color: #333; 
+            background-color: #b1b1b1;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 15px 0;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .navbar a:hover {
+            background: #555;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .section-title {
+            flex-wrap: wrap;
+            padding: 0px;
+            justify-content: left;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        section h2 {
+            color: black;
+        }
+        section p {
+            color: #000000;
+        }
+        .place {
+            display: flex;
+            align-items: center;
+        }
+        .place img {
+            width: 300px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .place dl {
+            display: table;
+            width: 100%;
+        }
+        .place dt, .place dd {
+            padding: 5px;
+        }
+        .place dt {
+            font-weight: bold;
+            width: 30%;
+        }
+        .place dd {
+            width: 100%;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+        #top {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        #top:hover {
+            background-color: #4CAF50; 
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><img src="WISATA.png" height="100"></h1>
+    </div>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="destination.html">List</a>
+        <a href="map.html">Peta</a>
+    </div>
+    <h2 class="section-title"><font size="6">Wisata Kabupaten Dairi</font></h2>
+    <section id="hillpark" class="place">
+        <img src="hillpark.jpg" alt="hillpark" height="300">
+        <div>
+            <h2>Hillpark Sibolangit</h2>
+            <p>Taman rekreasi keluarga dengan berbagai wahana permainan yang menarik, termasuk roller coaster dan bianglala.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 85.000 - Rp 100.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Sabtu-Minggu, 09.00 - 18.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Jl. Letjend Jamin Ginting, Sibolangit</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, toilet, food court, tempat istirahat, wahana permainan</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="merci" class="place">
+        <img src="merci.png" alt="merci" height="300">
+        <div>
+            <h2>Taman Wisata Merci</h2>
+            <p>Taman wisata dengan konsep rekreasi keluarga yang memiliki berbagai spot foto menarik dan wahana air.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 20.000 - Rp 30.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 09.00 - 18.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Jl. Karya Jaya, Tanjung Morawa</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Kolam renang, area parkir, warung makanan, tempat istirahat, spot foto</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="dua warna" class="place">
+        <img src="dua warna.jpeg" alt="dua warna" height="300">
+        <div>
+            <h2>Air Terjun Dua Warna</h2>
+            <p>Air terjun dengan fenomena air yang berwarna biru muda dan putih, dikelilingi oleh hutan tropis yang rimbun.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 15.000 - Rp 25.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 17.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Durin Sirugun, Kecamatan Sibolangit</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, toilet, pemandu wisata</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="lumbini" class="place">
+        <img src="lumbini.jpg" alt="lumbini" height="300">
+        <div>
+            <h2>Taman Alam Lumbini</h2>
+            <p>Taman dengan replika Pagoda Shwedagon dari Myanmar, tempat yang ideal untuk wisata religi dan fotografi.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Gratis</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 18.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Tongkoh, Kecamatan Dolat Rayat</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, toilet, tempat ibadah, tempat duduk, taman</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="cermin" class="place">
+        <img src="pantai cermin.png" alt="cermin" height="300">
+        <div>
+            <h2>Pantai Cermin Theme Park</h2>
+            <p>Taman rekreasi air yang menawarkan berbagai wahana permainan air dan pantai buatan.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 50.000 - Rp 100.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 09.00 - 18.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Pantai Cermin Kanan, Kecamatan Pantai Cermin</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Kolam renang, area parkir, restoran, tempat ganti baju, toilet</dd>
+            </dl>
+        </div>
+    </section>
+    <section id="piso" class="place">
+        <img src="piso.png" alt="piso" height="300">
+        <div>
+            <h2>Air Terjun Sipiso-piso</h2>
+            <p>Air terjun setinggi 120 meter yang menawarkan pemandangan indah dan udara sejuk.</p>
+            <dl>
+                <dt>Biaya Masuk:</dt>
+                <dd>Rp 5.000 - Rp 10.000/orang</dd>
+                <dt>Waktu Buka:</dt>
+                <dd>Setiap hari, 08.00 - 17.00</dd>
+                <dt>Alamat:</dt>
+                <dd>Desa Tongging, Kecamatan Merek</dd>
+                <dt>Fasilitas:</dt>
+                <dd>Area parkir, warung makanan, toilet, tempat duduk</dd>
+            </dl>
+        </div>
+    </section>
+    <div class="footer">
+        <p>Hak Cipta &copy; 2024 Wisata Sumatera Utara</p>
+    </div>
+    <button id="top" onclick="scrollToTop()"> KEMBALI KE ATAS</button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
